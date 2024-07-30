@@ -1,0 +1,40 @@
+<section class="choose_type_section">
+  <div class="container choose_type_container">
+    <div class="choose_type_row series_page_text_medium en_font">
+      <a
+        data-target="optical"
+        id="optical"
+        class="choose_type_btn"
+        href="../pages/optical_series.html"
+        >OPTICAL</a
+      >
+      <a
+        data-target="sunglasses"
+        id="sunglasses"
+        class="choose_type_btn"
+        href="../pages/sunglasses_series.html"
+        >SUNGLASSES</a
+      >
+      <a class="choose_type_btn" href="">FUNCTIONAL</a>
+    </div>
+  </div>
+</section>
+
+<script>
+  const chooseTypeBtns = document.querySelectorAll(".choose_type_btn");
+
+  chooseTypeBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const value = e.target.getAttribute("data-target");
+      localStorage.setItem("seriesType", value);
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const seriesType = localStorage.getItem("seriesType");
+    if (seriesType) {
+      const targetBtn = document.getElementById(seriesType);
+      targetBtn.classList.add("series_active");
+    }
+  });
+</script>

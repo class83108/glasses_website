@@ -1,0 +1,57 @@
+.page_row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  .page_container {
+    display: flex;
+    height: 48px;
+    .page_item {
+      height: 100%;
+    }
+  }
+  .page_link {
+    border: 1px solid $second_boder_color;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 0 16px;
+    height: 100%;
+    margin-right: -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $third_font_color;
+  }
+  .pre_page,
+  .next_page {
+    font-size: 19px;
+    line-height: 1.5;
+    padding: 0 12px;
+  }
+  .available {
+    background-color: #f2f2f2;
+  }
+  .active_page {
+    background-color: #000;
+    color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .page_row {
+    margin-bottom: 64px;
+    margin-left: -1px;
+    margin-right: -1px;
+    .page_container {
+      display: flex;
+      height: 45px;
+    }
+    .page_link {
+      font-size: 16px;
+      padding: 0 15px;
+    }
+    .pre_page,
+    .next_page {
+      padding: 0 12px;
+    }
+  }
+}

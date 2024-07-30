@@ -1,0 +1,134 @@
+.shop_list_container {
+  padding-top: 96px;
+  padding-bottom: 80px;
+
+  .shop_list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+  }
+}
+
+.shop_item {
+  width: calc((100% - 24px * 2) / 3);
+}
+
+.shop_link {
+  display: block;
+  img {
+    width: 100%;
+    display: block;
+  }
+  .shop_title {
+    padding: 8px 24px;
+    color: #000;
+    border: 1px solid $fifth_boder_color;
+    margin-top: -1px;
+  }
+  .info_box {
+    padding: 16px 27px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: 1px solid $fifth_boder_color;
+  }
+  .material-symbols-outlined {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .phone_box,
+  .time_box,
+  .address_box {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 992px) {
+  .shop_list_container {
+    padding-top: 80px;
+  }
+  .shop_item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop_list_container {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+
+  .shop_item {
+    width: 100%;
+  }
+}
+
+// 詳細頁樣式
+.shop_detail_container {
+  padding-top: 96px;
+  padding-bottom: 80px;
+}
+
+.shop_intro {
+  display: flex;
+  gap: 24px;
+}
+
+.shop_map {
+  background-image: url(../assets/images/map.png);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 992px) {
+  .shop_detail_container {
+    padding-top: 80px;
+  }
+  .shop_intro {
+    flex-direction: column;
+  }
+  .shop_map {
+    background-image: url(../assets/images/map-sm.png);
+    height: 414px;
+  }
+  .shop_card {
+    display: flex;
+    gap: 24px;
+    img {
+      width: calc(50% - 12px);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .shop_detail_container {
+    padding-top: 40px;
+    padding-bottom: 64px;
+    .info_box {
+      font-size: 20px;
+    }
+  }
+  .shop_map {
+    height: 208px;
+  }
+  .shop_card {
+    flex-direction: column;
+    gap: 0;
+    img {
+      width: 100%;
+      height: 224px;
+    }
+  }
+}

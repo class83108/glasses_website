@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門市詳細頁</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main class="shop_detail_section">
+      <div class="container shop_detail_container">
+        <h1 class="common_h1">門市據點</h1>
+        <%- include('./layout/shop_detail_select'); -%>
+        <div class="shop_intro">
+          <div class="shop_card shop_link">
+            <img src="../assets/images/storepage-1.png" alt="shop_pic" />
+            <div class="info_container">
+              <p class="shop_title text_x_medium">台北中山旗艦店</p>
+              <div class="info_box text">
+                <div class="phone_box">
+                  <span class="material-symbols-outlined">call</span>
+                  <span>電話：(02)000-1234</span>
+                </div>
+                <div class="time_box">
+                  <span class="material-symbols-outlined"> schedule </span>
+                  <span>營業時間：10:00-21:00</span>
+                </div>
+                <div class="address_box">
+                  <span class="material-symbols-outlined"> location_on </span>
+                  <span>地址：台北市中山區南京東路25巷2-1號</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop_map"></div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

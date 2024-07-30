@@ -1,0 +1,35 @@
+.choose_type_section {
+  .choose_type_row {
+    display: flex;
+  }
+  .choose_type_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.3333%;
+    text-decoration: none;
+    color: black;
+    padding: 24px 0;
+    border: 1px solid $main_boder_color;
+    max-height: 96px;
+    font-weight: 500;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  .series_active {
+    border-bottom: 8px solid $second_bg_color;
+  }
+}
+
+@media (max-width: 992px) {
+  .choose_type_section {
+    .choose_type_container {
+      padding: 0;
+    }
+    .choose_type_btn {
+      padding: 16px 0;
+      max-height: 68px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.faq_container {
+  padding-top: 96px;
+  padding-bottom: 80px;
+}
+.faq_h2 {
+  margin-bottom: 24px;
+}
+.faq_item {
+  margin-bottom: 32px;
+  .question {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .faq_container {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq_container {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+}

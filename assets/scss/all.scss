@@ -1,0 +1,29 @@
+// google font
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+// google icon
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// reset
+@import "reset";
+
+// variables
+@import "variables";
+
+// utilities
+@import "utilities";
+
+// components
+@import "./pages/index.scss";
+@import "./pages/series.scss";
+@import "./pages/shop.scss";
+@import "./pages/faq.scss";
+@import "./pages/blog.scss";
+
+// layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/choose_series_type.scss";
+@import "./layout/page.scss";
+@import "./layout/select_shop.scss";
