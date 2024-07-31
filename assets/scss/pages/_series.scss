@@ -60,9 +60,6 @@
   .product_item {
     display: block;
     width: calc((100% - 24px * 3) / 4);
-    img {
-      width: 100%;
-    }
     .info_box {
       display: flex;
       justify-content: space-between;

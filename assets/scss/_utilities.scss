@@ -8,6 +8,11 @@ body {
   font-family: "Noto Sans TC", sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 .en_font {
   font-family: "Roboto", sans-serif;
 }
@@ -137,7 +142,7 @@ a:hover {
   line-height: 1.5;
   font-weight: 700;
   padding-left: 12px;
-  border-left: 8px solid $third_boder_color;
+  border-left: 8px solid $third_border_color;
   margin-left: -4px;
   margin-bottom: 33px;
 }
