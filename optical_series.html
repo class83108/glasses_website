@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>系列鏡框-OPTICAL</title>
-    <script type="module" crossorigin src="/glasses_website/assets/main-28292d09.js"></script>
+    <script type="module" crossorigin src="/glasses_website/assets/main-8b171559.js"></script>
     <link rel="stylesheet" href="/glasses_website/assets/main-eb8d17b9.css">
   </head>
   <body>
@@ -43,39 +43,20 @@
         data-target="optical"
         id="optical"
         class="choose_type_btn"
-        href="../pages/optical_series.html"
+        href="optical_series.html"
         >OPTICAL</a
       >
       <a
         data-target="sunglasses"
         id="sunglasses"
         class="choose_type_btn"
-        href="../pages/sunglasses_series.html"
+        href="sunglasses_series.html"
         >SUNGLASSES</a
       >
       <a class="choose_type_btn" href="">FUNCTIONAL</a>
     </div>
   </div>
 </section>
-
-<script>
-  const chooseTypeBtns = document.querySelectorAll(".choose_type_btn");
-
-  chooseTypeBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      const value = e.target.getAttribute("data-target");
-      localStorage.setItem("seriesType", value);
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const seriesType = localStorage.getItem("seriesType");
-    if (seriesType) {
-      const targetBtn = document.getElementById(seriesType);
-      targetBtn.classList.add("series_active");
-    }
-  });
-</script>
       <section class="product_showcase_section">
         <div class="showcase_container">
           <div class="optical_showcase1 bg_img_format"></div>
