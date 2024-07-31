@@ -2,19 +2,19 @@
   display: flex;
   height: 296px;
   .optical_showcase1 {
-    background-image: url(../../../assets/images/product-header-1.png);
+    background-image: url(/assets/images/product-header-1.png);
     width: 50%;
   }
   .optical_showcase2 {
-    background-image: url(../../../assets/images/product-header-2.png);
+    background-image: url(/assets/images/product-header-2.png);
     width: 50%;
   }
   .sunglasses_showcase1 {
-    background-image: url(../../../assets/images/product-header-3.png);
+    background-image: url(/assets/images/product-header-3.png);
     width: 50%;
   }
   .sunglasses_showcase2 {
-    background-image: url(../../../assets/images/product-header-4.png);
+    background-image: url(/assets/images/product-header-4.png);
     width: 50%;
   }
 }
@@ -22,16 +22,16 @@
 @media (max-width: 992px) {
   .showcase_container {
     .optical_showcase1 {
-      background-image: url(../../../assets/images/product-header-sm-1.png);
+      background-image: url(/assets/images/product-header-sm-1.png);
     }
     .optical_showcase2 {
-      background-image: url(../../../assets/images/product-header-sm-2.png);
+      background-image: url(/assets/images/product-header-sm-2.png);
     }
     .sunglasses_showcase1 {
-      background-image: url(../../../assets/images/product-header-sm-3.png);
+      background-image: url(/assets/images/product-header-sm-3.png);
     }
     .sunglasses_showcase2 {
-      background-image: url(../../../assets/images/product-header-sm-4.png);
+      background-image: url(/assets/images/product-header-sm-4.png);
     }
   }
 }
