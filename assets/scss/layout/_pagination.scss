@@ -10,7 +10,7 @@
     }
   }
   .page_link {
-    border: 1px solid $second_border_color;
+    border: 1px solid $dark_gray_border;
     font-size: 18px;
     line-height: 1.5;
     padding: 0 16px;
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $third_font_color;
+    color: $dark_gray_font;
   }
   .pre_page,
   .next_page {
@@ -28,11 +28,11 @@
     padding: 0 12px;
   }
   .available {
-    background-color: #f2f2f2;
+    background-color: $light_gray;
   }
   .active_page {
-    background-color: #000;
-    color: white;
+    background-color: $black;
+    color: $white;
   }
 }
 

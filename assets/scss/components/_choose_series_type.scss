@@ -8,9 +8,9 @@
     align-items: center;
     width: 33.3333%;
     text-decoration: none;
-    color: black;
+    color: $black;
     padding: 24px 0;
-    border: 1px solid $main_border_color;
+    border: 1px solid $light_gray_border;
     max-height: 96px;
     font-weight: 500;
     &:hover {
@@ -18,7 +18,7 @@
     }
   }
   .series_active {
-    border-bottom: 8px solid $second_bg_color;
+    border-bottom: 8px solid $dark_red_border;
   }
 }
 

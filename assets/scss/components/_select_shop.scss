@@ -10,7 +10,7 @@
     pointer-events: none;
     border-left: var(--size) solid transparent;
     border-right: var(--size) solid transparent;
-    border-top: var(--size) solid black;
+    border-top: var(--size) solid $black;
     top: 55%;
     margin-left: -42px;
   }
@@ -18,8 +18,8 @@
 .shop_select {
   padding: 12px 6px;
   font-size: 18px;
-  color: $fourth_font_color;
-  border: 1px solid $fourth_border_color;
+  color: $blue_gray_font;
+  border: 1px solid $silver_border;
   width: 304px;
 
   appearance: none;

@@ -15,21 +15,21 @@
 }
 
 .h1 {
-  color: $main_font_color;
+  color: $deep_brown_font;
   font-size: 64px;
   line-height: 1.5;
   font-weight: 600;
 }
 
 .h2 {
-  color: $main_font_color;
+  color: $deep_brown_font;
   font-size: 48px;
   line-height: 1.5;
   font-weight: 600;
 }
 
 .h3 {
-  color: $main_font_color;
+  color: $deep_brown_font;
   font-size: 36px;
   line-height: 1.5;
 }
@@ -84,7 +84,7 @@
 }
 
 .index_en_h2_format {
-  color: $second_font_color;
+  color: $dark_red_font;
   font-style: italic;
   font-size: 48px;
   font-weight: 900;
@@ -110,7 +110,7 @@
 .blog_h2 {
   font-size: 32px;
   line-height: 1.5;
-  color: $main_font_color;
+  color: $deep_brown_font;
 }
 
 .common_h1 {
@@ -118,7 +118,7 @@
   line-height: 1.5;
   font-weight: 700;
   padding-left: 12px;
-  border-left: 8px solid $third_border_color;
+  border-left: 8px solid $deep_red_border;
   margin-left: -4px;
   margin-bottom: 33px;
 }

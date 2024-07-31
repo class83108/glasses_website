@@ -6,22 +6,22 @@
 @import "./base/reset";
 @import "./base/base";
 
-// variables
-@import "./helper/variables";
-
 // utilities
+@import "./utilities/variables";
 @import "./utilities/utilities";
 
 // components
+@import "./components/choose_series_type";
+@import "./components/select_shop";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/pagination";
+
+// pages
 @import "./pages/index";
 @import "./pages/series";
 @import "./pages/shop";
 @import "./pages/faq";
 @import "./pages/blog";
-
-// layout
-@import "./layout/header";
-@import "./layout/footer";
-@import "./layout/choose_series_type";
-@import "./layout/page";
-@import "./layout/select_shop";

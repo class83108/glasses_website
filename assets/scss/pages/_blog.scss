@@ -18,14 +18,14 @@
   }
   .info_box {
     .name_and_date {
-      color: black;
+      color: $black;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 16px;
     }
     .content {
-      color: $third_font_color;
+      color: $dark_gray_font;
       &.tablet {
         display: none;
       }
@@ -35,7 +35,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    color: $main_font_color;
+    color: $deep_brown_font;
   }
 }
 
@@ -112,7 +112,7 @@
 
 // 詳細頁樣式
 .blog_nav {
-  background-color: $third_bg_color;
+  background-color: $deep_brown_bg;
 }
 
 .blog_nav_row {
@@ -125,13 +125,13 @@
   display: flex;
   gap: 48px;
   .blog_nav_link {
-    color: white;
+    color: $white;
   }
 }
 
 .search_icon {
   font-size: 30px;
-  color: #fff;
+  color: $white;
 }
 
 @media (max-width: 768px) {
@@ -157,10 +157,10 @@
 .route_box {
   display: flex;
   .route_link {
-    color: #000;
+    color: $black;
   }
   .now_page {
-    color: $second_font_color;
+    color: $dark_red_font;
   }
 }
 
@@ -168,7 +168,7 @@
   display: flex;
   gap: 15px;
   .tag {
-    color: $second_font_color;
+    color: $dark_red_font;
   }
 }
 
@@ -206,14 +206,14 @@
   }
   .content {
     margin-top: 8px;
-    color: $third_font_color;
+    color: $dark_gray_font;
   }
 }
 
 .tag_content {
   max-width: calc((100% - 24px) * 0.21);
   .tag_h2 {
-    color: $second_font_color;
+    color: $dark_red_font;
     font-size: 32px;
     line-height: 1.5;
     display: flex;
@@ -228,7 +228,7 @@
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 4px;
-    color: $second_font_color;
+    color: $dark_red_font;
   }
 }
 
@@ -290,7 +290,7 @@
     display: flex;
     gap: 16px;
     padding-bottom: 16px;
-    border-bottom: 1px solid $six_border_color;
+    border-bottom: 1px solid $gray_border;
   }
   img {
     width: 24px;

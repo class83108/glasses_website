@@ -18,17 +18,17 @@
   display: block;
   .shop_title {
     padding: 8px 24px;
-    color: #000;
-    border: 1px solid $fifth_border_color;
+    color: $black;
+    border: 1px solid $transparent_black_border;
     margin-top: -1px;
   }
   .info_box {
     padding: 16px 27px;
-    color: #000;
+    color: $black;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border: 1px solid $fifth_border_color;
+    border: 1px solid $transparent_black_border;
   }
   .material-symbols-outlined {
     font-size: 20px;
@@ -45,8 +45,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    color: #fff;
+    background-color: $black;
+    color: $white;
     font-size: 19px;
   }
 }

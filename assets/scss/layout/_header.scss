@@ -1,5 +1,5 @@
 .header {
-  background: $second_bg_color;
+  background: $dark_red_bg;
   .nav_row {
     display: flex;
     justify-content: space-between;
@@ -19,11 +19,8 @@
   justify-content: space-between;
   gap: 64px;
   a {
-    color: white;
+    color: $white;
     text-decoration: none;
-    &:hover {
-      color: #f2f2f2;
-    }
   }
 }
 
@@ -48,7 +45,7 @@
         width: 50%;
         padding: 12px 0;
         text-align: center;
-        border: 1px solid #fff;
+        border: 1px solid $white;
       }
     }
   }
