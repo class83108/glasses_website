@@ -1,29 +1,5 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
 .en_font {
   font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  opacity: 0.8;
-  cursor: pointer;
 }
 
 .scale_hover:hover {

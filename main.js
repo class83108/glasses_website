@@ -1,5 +1,10 @@
 import "./assets/scss/all.scss";
 
+const seriesOpticalBtn = document.getElementById("series_optical");
+seriesOpticalBtn.addEventListener("click", () => {
+  localStorage.setItem("seriesType", "optical");
+});
+
 const chooseTypeBtns = document.querySelectorAll(".choose_type_btn");
 
 if (chooseTypeBtns) {
