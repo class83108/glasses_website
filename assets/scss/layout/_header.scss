@@ -1,8 +1,16 @@
 .header {
   background: $dark_red_bg;
+  .header_container {
+    @include mobile {
+      padding: 0;
+    }
+  }
   .nav_row {
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      flex-direction: column;
+    }
   }
 }
 
@@ -11,6 +19,9 @@
   display: flex;
   align-items: center;
   width: 80px;
+  @include mobile {
+    margin-left: 15px;
+  }
 }
 
 .nav_btns {
@@ -18,35 +29,21 @@
   align-items: center;
   justify-content: space-between;
   gap: 64px;
+  @include mobile {
+    flex-wrap: wrap;
+    margin-right: 0;
+    gap: 0;
+  }
+  li {
+    @include mobile {
+      width: 50%;
+      padding: 12px 0;
+      text-align: center;
+      border: 1px solid $white;
+    }
+  }
   a {
     color: $white;
     text-decoration: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .header {
-    .container {
-      padding: 0;
-    }
-  }
-  .nav_row {
-    flex-direction: column;
-    padding: 0;
-
-    .logo_container {
-      margin-left: 15px;
-    }
-    .nav_btns {
-      flex-wrap: wrap;
-      margin-right: 0;
-      gap: 0;
-      li {
-        width: 50%;
-        padding: 12px 0;
-        text-align: center;
-        border: 1px solid $white;
-      }
-    }
   }
 }

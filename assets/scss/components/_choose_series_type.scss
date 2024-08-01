@@ -1,4 +1,9 @@
 .choose_type_section {
+  .choose_type_container {
+    @include pad {
+      padding: 0;
+    }
+  }
   .choose_type_row {
     display: flex;
   }
@@ -16,20 +21,12 @@
     &:hover {
       opacity: 0.6;
     }
-  }
-  .series_active {
-    border-bottom: 8px solid $dark_red_border;
-  }
-}
-
-@media (max-width: 992px) {
-  .choose_type_section {
-    .choose_type_container {
-      padding: 0;
-    }
-    .choose_type_btn {
+    @include pad {
       padding: 16px 0;
       max-height: 68px;
     }
+  }
+  .series_active {
+    border-bottom: 8px solid $dark_red_border;
   }
 }

@@ -1,3 +1,15 @@
+@mixin pad {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
 .en_font {
   font-family: "Roboto", sans-serif;
 }
@@ -12,6 +24,12 @@
   max-width: 1320px;
   margin: 0 auto;
   padding: 0 12px;
+  @include pad {
+    padding: 0 36px;
+  }
+  @include mobile {
+    padding: 0 14px;
+  }
 }
 
 .h1 {
@@ -37,6 +55,9 @@
 .text {
   font-size: 20px;
   line-height: 1.5;
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .text_small {
@@ -81,6 +102,10 @@
 .index_h2_format {
   text-align: center;
   margin-bottom: 48px;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
 }
 
 .index_en_h2_format {
@@ -94,17 +119,29 @@
 .series_page_text_medium {
   font-size: 32px;
   line-height: 1.5;
+  @include pad {
+    font-size: 24px;
+  }
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .series_h1 {
   font-size: 42px;
   line-height: 1.5;
   font-weight: 500;
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .series_h2 {
   font-size: 32px;
   line-height: 1.5;
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .blog_h2 {
@@ -121,39 +158,7 @@
   border-left: 8px solid $deep_red_border;
   margin-left: -4px;
   margin-bottom: 33px;
-}
-
-@media (max-width: 992px) {
-  .container {
-    padding: 0 36px;
-  }
-  .series_page_text_medium {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding: 0 14px;
-  }
-  .text {
-    font-size: 16px;
-  }
-  .index_h2_format {
-    font-size: 24px;
-    margin-bottom: 24px;
-  }
-  .series_page_text_medium {
-    font-size: 16px;
-  }
-  .series_h1 {
-    font-size: 24px;
-  }
-
-  .series_h2 {
-    font-size: 24px;
-  }
-  .common_h1 {
+  @include mobile {
     font-size: 24px;
     margin-bottom: 24px;
   }

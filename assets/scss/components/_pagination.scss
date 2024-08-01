@@ -2,9 +2,17 @@
   display: flex;
   justify-content: center;
   margin-bottom: 80px;
+  @include mobile {
+    margin-bottom: 64px;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
   .page_container {
     display: flex;
     height: 48px;
+    @include mobile {
+      height: 45px;
+    }
     .page_item {
       height: 100%;
     }
@@ -20,6 +28,10 @@
     justify-content: center;
     align-items: center;
     color: $dark_gray_font;
+    @include mobile {
+      font-size: 16px;
+      padding: 0 15px;
+    }
   }
   .pre_page,
   .next_page {
@@ -33,25 +45,5 @@
   .active_page {
     background-color: $black;
     color: $white;
-  }
-}
-
-@media (max-width: 768px) {
-  .page_row {
-    margin-bottom: 64px;
-    margin-left: -1px;
-    margin-right: -1px;
-    .page_container {
-      display: flex;
-      height: 45px;
-    }
-    .page_link {
-      font-size: 16px;
-      padding: 0 15px;
-    }
-    .pre_page,
-    .next_page {
-      padding: 0 12px;
-    }
   }
 }

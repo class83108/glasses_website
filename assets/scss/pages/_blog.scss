@@ -1,20 +1,53 @@
 .blog_list_row {
   padding-top: 96px;
   padding-bottom: 124px;
+  @include pad {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+}
+
+.common_h1 {
+  @include pad {
+    margin-bottom: 40px;
+  }
+  @include mobile {
+    margin-bottom: 24px;
+  }
+}
+
+.blog_h2 {
+  @include pad {
+    font-size: 24px;
+  }
 }
 
 .blog_list_box {
   display: flex;
   gap: 60px;
   flex-direction: column;
+  @include mobile {
+    gap: 24px;
+  }
 }
 
 .blog_list_link {
   display: flex;
   gap: 24px;
   position: relative;
+  @include mobile {
+    flex-direction: column;
+    gap: 8px;
+  }
   img {
     width: calc(50% - 12px);
+    @include mobile {
+      width: 100%;
+    }
   }
   .info_box {
     .name_and_date {
@@ -23,46 +56,17 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 16px;
+      @include pad {
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
     }
     .content {
       color: $dark_gray_font;
       &.tablet {
         display: none;
       }
-    }
-  }
-  .more_info {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: $deep_brown_font;
-  }
-}
-
-@media (max-width: 1100px) {
-  .more_info {
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  .blog_list_row {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    .common_h1 {
-      margin-bottom: 40px;
-    }
-    .blog_h2 {
-      font-size: 24px;
-    }
-  }
-  .blog_list_link {
-    .info_box {
-      .name_and_date {
-        font-size: 16px;
-        margin-bottom: 4px;
-      }
-      .content {
+      @include pad {
         font-size: 16px;
         &.pc {
           display: none;
@@ -72,41 +76,28 @@
           display: block;
         }
       }
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .blog_list_row {
-    padding-top: 40px;
-    padding-bottom: 64px;
-    .common_h1 {
-      margin-bottom: 24px;
-    }
-  }
-  .blog_list_box {
-    gap: 24px;
-  }
-  .blog_list_link {
-    flex-direction: column;
-    gap: 8px;
-    .info_box {
-      .name_and_date {
-        font-size: 16px;
-        margin-bottom: 4px;
-      }
-      .content {
+      @include mobile {
         &.tablet {
           display: none;
         }
       }
     }
-    .more_info {
+  }
+  .more_info {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: $deep_brown_font;
+    @include mobile {
       display: none;
     }
-    img {
-      width: 100%;
-    }
+  }
+}
+
+// 處理more會在特定寬度時跟內容重疊的問題
+@media (max-width: 1100px) {
+  .more_info {
+    display: none;
   }
 }
 
@@ -124,6 +115,11 @@
 .blog_nav_btns {
   display: flex;
   gap: 48px;
+  @include mobile {
+    width: 100%;
+    gap: 24px;
+    justify-content: space-between;
+  }
   .blog_nav_link {
     color: $white;
   }
@@ -132,21 +128,19 @@
 .search_icon {
   font-size: 30px;
   color: $white;
-}
-
-@media (max-width: 768px) {
-  .blog_nav_btns {
-    width: 100%;
-    gap: 24px;
-    justify-content: space-between;
-  }
-  .search_icon {
+  @include mobile {
     display: none;
   }
 }
 
 .route_row {
   margin-top: 24px;
+  @include pad {
+    margin-top: 8px;
+  }
+  @include mobile {
+    margin-top: 16px;
+  }
 }
 
 .top_tags_row {
@@ -167,29 +161,20 @@
 .top_tags_row {
   display: flex;
   gap: 15px;
+  @include mobile {
+    font-size: 16px;
+  }
   .tag {
     color: $dark_red_font;
-  }
-}
-
-@media (max-width: 992px) {
-  .route_row {
-    margin-top: 8px;
-  }
-}
-
-@media (max-width: 768px) {
-  .route_row {
-    margin-top: 16px;
-  }
-  .top_tags_row {
-    font-size: 16px;
   }
 }
 
 .blog_detail_h1 {
   font-size: 48px;
   line-height: 1.5;
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
 .blog_main_content_row {
@@ -197,21 +182,48 @@
   gap: 24px;
   .main_content {
     max-width: calc((100% - 24px) * 0.673);
+    @include pad {
+      max-width: calc((100% - 24px) * 0.7678);
+    }
+    @include mobile {
+      max-width: 100%;
+      margin-bottom: 64px;
+    }
   }
   .content_box {
     margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 40px;
+    @include pad {
+      margin-top: 24px;
+      gap: 24px;
+    }
+    @include mobile {
+      margin-top: 16px;
+      gap: 16px;
+    }
   }
   .content {
     margin-top: 8px;
     color: $dark_gray_font;
+    @include pad {
+      margin-top: 16px;
+    }
+  }
+}
+
+.desc {
+  @include mobile {
+    font-size: 16px;
   }
 }
 
 .tag_content {
   max-width: calc((100% - 24px) * 0.21);
+  @include mobile {
+    display: none;
+  }
   .tag_h2 {
     color: $dark_red_font;
     font-size: 32px;
@@ -219,8 +231,16 @@
     display: flex;
     gap: 12px;
     align-items: center;
+    @include pad {
+      gap: 2px;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
     .label {
       font-size: 38px;
+      @include pad {
+        font-size: 19px;
+      }
     }
   }
   .tag_box {
@@ -229,32 +249,7 @@
     column-gap: 24px;
     row-gap: 4px;
     color: $dark_red_font;
-  }
-}
-
-@media (max-width: 992px) {
-  .blog_main_content_row {
-    .main_content {
-      max-width: calc((100% - 24px) * 0.7678);
-    }
-    .content_box {
-      margin-top: 24px;
-      gap: 24px;
-    }
-    .content {
-      margin-top: 16px;
-    }
-  }
-  .tag_content {
-    .tag_h2 {
-      gap: 2px;
-      font-size: 16px;
-      margin-bottom: 8px;
-      .label {
-        font-size: 19px;
-      }
-    }
-    .tag_box {
+    @include pad {
       font-size: 16px;
       column-gap: 16px;
       row-gap: 0px;
@@ -262,30 +257,11 @@
   }
 }
 
-@media (max-width: 768px) {
-  .blog_detail_h1 {
-    font-size: 24px;
-  }
-  .desc {
-    font-size: 16px;
-  }
-  .blog_main_content_row {
-    .main_content {
-      max-width: 100%;
-      margin-bottom: 64px;
-    }
-    .tag_content {
-      display: none;
-    }
-    .content_box {
-      margin-top: 16px;
-      gap: 16px;
-    }
-  }
-}
-
 .bottom_content_row {
   margin-top: 40px;
+  @include mobile {
+    display: none;
+  }
   .share_box {
     display: flex;
     gap: 16px;
@@ -304,24 +280,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .inner_page_box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-}
-
-@media (max-width: 992px) {
-  .page_box {
+  @include pad {
     font-size: 16px;
     .arrow {
       font-size: 16px;
     }
   }
-}
-
-@media (max-width: 768px) {
-  .bottom_content_row {
-    display: none;
+  .inner_page_box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
   }
 }

@@ -1,7 +1,13 @@
 .shop_list_container {
   padding-top: 96px;
   padding-bottom: 80px;
-
+  @include pad {
+    padding-top: 80px;
+  }
+  @include mobile {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
   .shop_list {
     display: flex;
     flex-wrap: wrap;
@@ -12,6 +18,12 @@
 
 .shop_item {
   width: calc((100% - 24px * 2) / 3);
+  @include pad {
+    width: calc((100% - 24px) / 2);
+  }
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .shop_link {
@@ -51,75 +63,52 @@
   }
 }
 
-@media (max-width: 992px) {
-  .shop_list_container {
-    padding-top: 80px;
-  }
-  .shop_item {
-    width: calc((100% - 24px) / 2);
-  }
-}
-
-@media (max-width: 768px) {
-  .shop_list_container {
-    padding-top: 40px;
-    padding-bottom: 64px;
-  }
-
-  .shop_item {
-    width: 100%;
-  }
-}
-
 // 詳細頁樣式
 .shop_detail_container {
   padding-top: 96px;
   padding-bottom: 80px;
-}
-
-.shop_intro {
-  display: flex;
-  gap: 24px;
-}
-
-.shop_map {
-  background-image: url(/assets/images/map.png);
-  width: 100%;
-  height: auto;
-}
-
-@media (max-width: 992px) {
-  .shop_detail_container {
+  @include pad {
     padding-top: 80px;
   }
-  .shop_intro {
-    flex-direction: column;
-  }
-  .shop_map {
-    background-image: url(/assets/images/map-sm.png);
-    height: 414px;
-  }
-  .shop_card {
-    display: flex;
-    gap: 24px;
-    img {
-      width: calc(50% - 12px);
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .shop_detail_container {
+  @include mobile {
     padding-top: 40px;
     padding-bottom: 64px;
     .info_box {
       font-size: 20px;
     }
   }
-  .shop_map {
+}
+
+.shop_intro {
+  display: flex;
+  gap: 24px;
+  @include pad {
+    flex-direction: column;
+  }
+}
+
+.shop_map {
+  background-image: url(/assets/images/map.png);
+  width: 100%;
+  height: auto;
+  @include pad {
+    background-image: url(/assets/images/map-sm.png);
+    height: 414px;
+  }
+  @include mobile {
     height: 208px;
   }
-  .shop_card {
+}
+
+.shop_card {
+  @include pad {
+    display: flex;
+    gap: 24px;
+    img {
+      width: calc(50% - 12px);
+    }
+  }
+  @include mobile {
     flex-direction: column;
     gap: 0;
     img {
