@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-3cfb730f.js";const e=document.querySelector(".test_route1"),t=document.querySelector(".test_route2");e.style.backgroundImage="url(/assets/images/blog-1.png)";t.style.backgroundImage="url(/assets/images/blog-2.png)";
