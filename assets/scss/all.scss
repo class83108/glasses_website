@@ -2,13 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
+// utilities
+@import "./utilities/mixins";
+@import "./utilities/variables";
+@import "./utilities/utilities";
+
 // base
 @import "./base/reset";
 @import "./base/base";
-
-// utilities
-@import "./utilities/variables";
-@import "./utilities/utilities";
 
 // components
 @import "./components/choose_series_type";
